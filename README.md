@@ -1,0 +1,79 @@
+﻿<div align="center">
+
+# Sunone Aimbot
+[![Python Version](https://img.shields.io/badge/Python-3.12.0-FFD43B?logo=python)](https://github.com/WeikAiAim/sunone_aimbot)
+[![License MIT](https://badgen.net/github/license/WeikAiAim/sunone_aimbot)](https://github.com/WeikAiAim/sunone_aimbot/blob/main/LICENSE)
+[![Github stars](https://img.shields.io/github/stars/WeikAiAim/sunone_aimbot?color=ffb500)](https://github.com/WeikAiAim/sunone_aimbot)
+[![Discord server](https://badgen.net/discord/online-members/sunone)](https://discord.gg/37WVp6sNEh)
+  <p>
+    <a href="https://github.com/WeikAiAim/sunone_aimbot/releases" target="_blank">
+      <img width="75%" src="https://raw.githubusercontent.com/WeikAiAim/sunone_aimbot/main/media/one.gif"></a>
+  </p>
+</div>
+
+## Overview
+Sunone Aimbot is an AI-powered aim bot for first-person shooter games. It leverages the YOLOv8 and YOLOv10 models, PyTorch, and various other tools to automatically target and aim at enemies within the game. The AI model in repository has been trained on more than 30,000 images from popular first-person shooter games like Warface, Destiny 2, Battlefield (all series), Fortnite, The Finals, CS2 and more.
+> [!WARNING]
+> Use it at your own risk, we do not guarantee that you may be blocked!
+
+> [!NOTE]
+> The recommended graphics card for starting and more productive and stable operation starts with the rtx 20 series.
+
+## Requirements
+Before you get started, make sure you have the following prerequisites installed and pay attention to the versions in [Tested Environment](https://github.com/WeikAiAim/sunone_aimbot?tab=readme-ov-file#tested-environment) block, this may cause errors in launching the aimbot.
+
+- [Config options](https://github.com/WeikAiAim/sunone_aimbot_docs/blob/main/config/config.md)
+- [Install guide](https://github.com/WeikAiAim/sunone_aimbot_docs/blob/main/install/helper.md)
+- [Questions](https://github.com/WeikAiAim/sunone_aimbot_docs/blob/main/questions/questions.md)
+- [Arduino setup](https://github.com/WeikAiAim/HID_Arduino)
+- [Arduino Logitech G-series](https://github.com/WeikAiAim/usb-host-shield-mouse_for_ai_aimbot)
+- [Discord server](https://discord.gg/sunone)
+- [AI Models docs](https://github.com/WeikAiAim/sunone_aimbot_docs/blob/main/ai_models/ai_models.md)
+
+<br></br>
+- To launch the aimbot after all installations, start `run_ai.bat` or type `py run.py`.
+- To launch the React helper panel (config/export/train/tests), run `run_helper.bat`.
+  - `run_helper.bat` performs one-click setup (Python deps + npm deps + React build), starts helper API/UI, and opens the browser automatically.
+- On Ubuntu/Linux, use `bash run_ai.sh` or `bash run_helper.sh`.
+
+### Ubuntu / Linux
+- Use Python 3.12 in a virtual environment and install dependencies with `python -m pip install -r requirements.txt`.
+- Use `mss_capture = True` or `Obs_capture = True`; BetterCam, GHUB and Razer DLL input are Windows-only.
+- Native Linux hotkeys/mouse input use `pynput` and require an X11 session with input permissions. Wayland sessions can block global input and screen capture.
+- CUDA installation is not automated by the helper on Ubuntu. Install NVIDIA driver/CUDA with your package manager or NVIDIA's Linux installer, then install the matching PyTorch build.
+- Launch with `python run.py`. The `.bat` launchers are Windows-only.
+
+# Consider Sunone Aimbot 2 (C++)
+- [Sunone Aimbot 2](https://github.com/WeikAiAim/sunone_aimbot_2) is the newer C++ branch and is the better choice for most Windows users who want a ready-to-run build instead of maintaining a Python environment.
+- It provides precompiled CUDA/TensorRT and DirectML builds, so NVIDIA users can use the high-performance TensorRT path while AMD, Intel, older NVIDIA and integrated GPUs can use the DirectML build.
+- It has an in-app overlay/settings UI opened with `Home`, while this Python version still relies mostly on `config.ini`, a helper panel and OpenCV/Tk debug windows.
+- Its capture layer is broader: Desktop Duplication, WinRT window/monitor capture, virtual camera and UDP capture are documented, while this Python version is limited to MSS, BetterCam and OBS virtual camera.
+- It has a larger runtime feature set: switchable TRT/DML backend, GPU direct capture options, Kalman prediction, WindMouse movement, depth-mask/depth-inference options, game overlay rendering, and more input devices such as KMBOX and MAKCU.
+- This Python repository is still useful for experiments, training/export tooling, Linux/Ubuntu work, and easier code changes. For daily Windows use, Sunone Aimbot 2 is currently the more complete and actively maintained path.
+
+## Working environment:
+<table>
+  <thead><tr><th>Windows</th><td>10 and 11(priority)</td></thead>
+  <thead><tr><th>Python:</th><td>3.12.0</td></tr></thead>
+  <thead><tr><th>CUDA:</th><td>12.8</td></tr></thead>
+  <thead><tr><th>TensorRT:</th><td>10.13.0.35</td></tr></thead>
+  <thead><tr><th>Ultralytics:</th><td>8.3.174</td></tr></thead>
+  <thead><tr><th>GitHub AI Model:</th><td>sunxds_0.8.0</td></tr></thead>
+  <thead><tr><th>Supporters AI Model:</th><td>sunxds_0.8.2</td></tr></thead>
+</table>
+
+## Notes / Recommendations
+- Limit the maximum value of frames per second in the game in which you will use it. And also do not set the screen resolution to high. Do not overload the graphics card.
+- Do not set high graphics settings in games.
+- Limit the browser (try not to watch YouTube while playing and working AI at the same time, for example (of course if you don't have a super duper graphics card)) and so on, which loads the video card.
+- Try to use TensorRT for acceleration. `.pt` model is good, but does not have as much speed as `.engine`.
+- Turn off the cv2 debug window, this saves system resources.
+- Do not increase the object search window resolution, this may affect your search speed.
+- If you have started the application and nothing happens, it may be working, close it with the F2 key and change the `show_window` option to `True` in the file [config.ini](https://github.com/WeikAiAim/sunone_aimbot/blob/main/config.ini) to make sure that the application is working.
+
+## Support the project
+[Boosty](https://boosty.to/sunone) [Patreon](https://www.patreon.com/sunone).
+
+## License
+This project is licensed under the MIT License. See **[LICENSE](https://github.com/WeikAiAim/sunone_aimbot/blob/main/LICENSE)** for details
+

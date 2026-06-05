@@ -1,0 +1,26 @@
+cuda_python
+bettercam; platform_system == "Windows"
+numpy
+pywin32; platform_system == "Windows"
+screeninfo
+asyncio
+onnxruntime
+onnxruntime-gpu
+pyserial
+requests
+opencv-python
+packaging
+ultralytics
+keyboard
+mss
+pynput
+supervision
+trackers
+hid
+pyusb
+pandas
+psutil
+fastapi
+httpx
+uvicorn[standard]
+python-multipart
