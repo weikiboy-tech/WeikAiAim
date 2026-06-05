@@ -19,6 +19,9 @@ Sunone Aimbot is an AI-powered aim bot for first-person shooter games. It levera
 > [!NOTE]
 > The recommended graphics card for starting and more productive and stable operation starts with the rtx 20 series.
 
+## Beispielvorschau
+[![Beispielvorschau](https://raw.githubusercontent.com/weikiboy-tech/WeikAiAim/main/media/one.gif)](https://raw.githubusercontent.com/weikiboy-tech/WeikAiAim/main/media/one.gif)
+
 ## Requirements
 Before you get started, make sure you have the following prerequisites installed and pay attention to the versions in [Tested Environment](https://github.com/WeikAiAim/sunone_aimbot?tab=readme-ov-file#tested-environment) block, this may cause errors in launching the aimbot.
 
