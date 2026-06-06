@@ -1,18 +1,17 @@
 ﻿<div align="center">
 
-# Sunone Aimbot
-[![Python Version](https://img.shields.io/badge/Python-3.12.0-FFD43B?logo=python)](https://github.com/WeikAiAim/sunone_aimbot)
-[![License MIT](https://badgen.net/github/license/WeikAiAim/sunone_aimbot)](https://github.com/WeikAiAim/sunone_aimbot/blob/main/LICENSE)
-[![Github stars](https://img.shields.io/github/stars/WeikAiAim/sunone_aimbot?color=ffb500)](https://github.com/WeikAiAim/sunone_aimbot)
+# WeikAiAim
+[![Python Version](https://img.shields.io/badge/Python-3.12.0-FFD43B?logo=python)](https://github.com/weikiboy-tech/WeikAiAim)
+[![Github stars](https://img.shields.io/github/stars/weikiboy-tech/WeikAiAim?color=ffb500)](https://github.com/weikiboy-tech/WeikAiAim)
 [![Discord server](https://badgen.net/discord/online-members/sunone)](https://discord.gg/37WVp6sNEh)
   <p>
-    <a href="https://github.com/WeikAiAim/sunone_aimbot/releases" target="_blank">
-      <img width="75%" src="https://raw.githubusercontent.com/WeikAiAim/sunone_aimbot/main/media/one.gif"></a>
+    <a href="https://github.com/weikiboy-tech/WeikAiAim/releases" target="_blank">
+      <img width="75%" src="https://raw.githubusercontent.com/weikiboy-tech/WeikAiAim/main/media/one.gif"></a>
   </p>
 </div>
 
 ## Overview
-Sunone Aimbot is an AI-powered aim bot for first-person shooter games. It leverages the YOLOv8 and YOLOv10 models, PyTorch, and various other tools to automatically target and aim at enemies within the game. The AI model in repository has been trained on more than 30,000 images from popular first-person shooter games like Warface, Destiny 2, Battlefield (all series), Fortnite, The Finals, CS2 and more.
+WeikAiAim is an AI-powered aim bot for first-person shooter games. It leverages the YOLOv8 and YOLOv10 models, PyTorch, and various other tools to automatically target and aim at enemies within the game. The AI model in repository has been trained on more than 30,000 images from popular first-person shooter games like Warface, Destiny 2, Battlefield (all series), Fortnite, The Finals, CS2 and more.
 > [!WARNING]
 > Use it at your own risk, we do not guarantee that you may be blocked!
 
@@ -46,13 +45,13 @@ Before you get started, make sure you have the following prerequisites installed
 - CUDA installation is not automated by the helper on Ubuntu. Install NVIDIA driver/CUDA with your package manager or NVIDIA's Linux installer, then install the matching PyTorch build.
 - Launch with `python run.py`. The `.bat` launchers are Windows-only.
 
-# Consider Sunone Aimbot 2 (C++)
-- [Sunone Aimbot 2](https://github.com/WeikAiAim/sunone_aimbot_2) is the newer C++ branch and is the better choice for most Windows users who want a ready-to-run build instead of maintaining a Python environment.
+# Consider WeikAiAim 2 (C++)
+- [WeikAiAim 2](https://github.com/WeikAiAim/WeikAiAim_2) is the newer C++ branch and is the better choice for most Windows users who want a ready-to-run build instead of maintaining a Python environment.
 - It provides precompiled CUDA/TensorRT and DirectML builds, so NVIDIA users can use the high-performance TensorRT path while AMD, Intel, older NVIDIA and integrated GPUs can use the DirectML build.
 - It has an in-app overlay/settings UI opened with `Home`, while this Python version still relies mostly on `config.ini`, a helper panel and OpenCV/Tk debug windows.
 - Its capture layer is broader: Desktop Duplication, WinRT window/monitor capture, virtual camera and UDP capture are documented, while this Python version is limited to MSS, BetterCam and OBS virtual camera.
 - It has a larger runtime feature set: switchable TRT/DML backend, GPU direct capture options, Kalman prediction, WindMouse movement, depth-mask/depth-inference options, game overlay rendering, and more input devices such as KMBOX and MAKCU.
-- This Python repository is still useful for experiments, training/export tooling, Linux/Ubuntu work, and easier code changes. For daily Windows use, Sunone Aimbot 2 is currently the more complete and actively maintained path.
+- This Python repository is still useful for experiments, training/export tooling, Linux/Ubuntu work, and easier code changes. For daily Windows use, WeikAiAim 2 is currently the more complete and actively maintained path.
 
 ## Working environment:
 <table>
@@ -72,11 +71,8 @@ Before you get started, make sure you have the following prerequisites installed
 - Try to use TensorRT for acceleration. `.pt` model is good, but does not have as much speed as `.engine`.
 - Turn off the cv2 debug window, this saves system resources.
 - Do not increase the object search window resolution, this may affect your search speed.
-- If you have started the application and nothing happens, it may be working, close it with the F2 key and change the `show_window` option to `True` in the file [config.ini](https://github.com/WeikAiAim/sunone_aimbot/blob/main/config.ini) to make sure that the application is working.
+- If you have started the application and nothing happens, it may be working, close it with the F2 key and change the `show_window` option to `True` in the file [config.ini](https://github.com/weikiboy-tech/WeikAiAim/blob/main/config.ini) to make sure that the application is working.
 
 ## Support the project
-[Boosty](https://boosty.to/sunone) [Patreon](https://www.patreon.com/sunone).
-
-## License
-This project is licensed under the MIT License. See **[LICENSE](https://github.com/WeikAiAim/sunone_aimbot/blob/main/LICENSE)** for details
+[Boosty](https://boosty.to/sunone).
 
