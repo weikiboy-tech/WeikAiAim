@@ -3,7 +3,7 @@
 # WeikAiAim
 [![Python Version](https://img.shields.io/badge/Python-3.12.0-FFD43B?logo=python)](https://github.com/weikiboy-tech/WeikAiAim)
 [![Github stars](https://img.shields.io/github/stars/weikiboy-tech/WeikAiAim?color=ffb500)](https://github.com/weikiboy-tech/WeikAiAim)
-[![Discord server](https://badgen.net/discord/online-members/sunone)](https://discord.gg/37WVp6sNEh)
+[![Discord server](https://badgen.net/discord/online-members/sunone)](https://discord.gg/6VGcTJr48s)
   <p>
     <a href="https://github.com/weikiboy-tech/WeikAiAim/releases" target="_blank">
       <img width="75%" src="https://raw.githubusercontent.com/weikiboy-tech/WeikAiAim/main/media/one.gif"></a>
@@ -29,7 +29,7 @@ Before you get started, make sure you have the following prerequisites installed
 - [Questions](https://github.com/WeikAiAim/sunone_aimbot_docs/blob/main/questions/questions.md)
 - [Arduino setup](https://github.com/WeikAiAim/HID_Arduino)
 - [Arduino Logitech G-series](https://github.com/WeikAiAim/usb-host-shield-mouse_for_ai_aimbot)
-- [Discord server](https://discord.gg/sunone)
+- [Discord server](https://discord.gg/6VGcTJr48s)
 - [AI Models docs](https://github.com/WeikAiAim/sunone_aimbot_docs/blob/main/ai_models/ai_models.md)
 
 <br></br>
@@ -74,5 +74,5 @@ Before you get started, make sure you have the following prerequisites installed
 - If you have started the application and nothing happens, it may be working, close it with the F2 key and change the `show_window` option to `True` in the file [config.ini](https://github.com/weikiboy-tech/WeikAiAim/blob/main/config.ini) to make sure that the application is working.
 
 ## Support the project
-[Boosty](https://boosty.to/sunone).
+[Discord](https://discord.gg/6VGcTJr48s)
 
