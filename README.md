@@ -33,9 +33,10 @@ Before you get started, make sure you have the following prerequisites installed
 - [AI Models docs](https://github.com/WeikAiAim/sunone_aimbot_docs/blob/main/ai_models/ai_models.md)
 
 <br></br>
-- To launch the aimbot after all installations, start `run_ai.bat` or type `py run.py`.
-- To launch the React helper panel (config/export/train/tests), run `run_helper.bat`.
-  - `run_helper.bat` performs one-click setup (Python deps + npm deps + React build), starts helper API/UI, and opens the browser automatically.
+- To install everything with one click, run `install_all_requirements.bat`.
+- Start both components using these two batch files:
+  - `run_ai.bat` (Aimbot)
+  - `run_helper.bat` (Helper UI + API)
 - On Ubuntu/Linux, use `bash run_ai.sh` or `bash run_helper.sh`.
 
 ### Ubuntu / Linux
